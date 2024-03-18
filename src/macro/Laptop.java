@@ -6,8 +6,6 @@ import java.util.List;
 
 public class Laptop {
 
-
-
         // Создание полей
         private String model;
         private float diagonal;

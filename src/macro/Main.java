@@ -40,13 +40,10 @@ public class Main {
         laptops.add(acer_air6);
         laptops.add(acer_a313);
 
-        // создание нового объекта вызова методов
-        Laptop FilterLaptop = new Laptop();
         laptops.forEach(laptop -> System.out.println(laptop.toString()));
-// вызов метода фильтрации по определеннеым параметрам
-        // System.out.println("по вашему запросу найдено: " + FilterLaptop.filter(laptops));
 
-// вызод метода фильтрации по заданным пользователем критериям
-//        System.out.println(FilterLaptop.newFilter(laptops));
+        Filter laptopFilter = new Filter(laptops);
+        laptopFilter.find();
+
     }
 }
